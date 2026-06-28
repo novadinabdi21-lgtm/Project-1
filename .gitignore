@@ -1,5 +1,25 @@
+<<<<<<< HEAD
 .venv/
 __pycache__/
 *.pyc
 .DS_Store
 .vscode/
+=======
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# VS Code settings
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Environment variables
+.env
+>>>>>>> b5dfee2397000f1ddedceffe9ce73f2a62e5cf71
