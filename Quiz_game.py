@@ -43,7 +43,7 @@ for question in questions:
 
     guess = input("Enter (A, B, C, or D): ").upper()
     guesses.append(guess)
-    
+
     if guess == answers[questions_num]:
         score += 1
         print("Correct!")
@@ -54,4 +54,19 @@ for question in questions:
 
     questions_num += 1
 
+print("                       ")
+print("       RESULTS         ")
+print("                       ")
 
+print("Answers: ", end="")
+for answer in answers:
+    print(answer, end=" ")
+print()
+
+print("Guesses: ", end="")
+for guess in guesses:
+    print(guess, end=" ")
+print()
+
+score = int(score / len(questions) * 100)
+print(f"Your score is: {score}%")
