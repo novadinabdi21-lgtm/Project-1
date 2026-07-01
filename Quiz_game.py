@@ -26,7 +26,7 @@ options = (("A. 9 ", "B. 10 ", "C. 11 ", "D. 12 "),
 
 answers = ("C", "D", "C", "C", "C", "B", "D", "C", "A", "B")
 
-guess = []
+guesses = []
 
 score = 0
 
@@ -41,6 +41,17 @@ for question in questions:
     for option in options[questions_num]:
         print(option)
 
-        questions_num += 1
+    guess = input("Enter (A, B, C, or D): ").upper()
+    guesses.append(guess)
+    
+    if guess == answers[questions_num]:
+        score += 1
+        print("Correct!")
+    else:
+        print("Wrong!")
+        print(f"{answers[questions_num]} is the correct answer.")
+
+
+    questions_num += 1
 
 
